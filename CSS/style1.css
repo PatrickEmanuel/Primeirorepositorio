@@ -1,0 +1,82 @@
+body {
+    background: #222;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#efeito {
+    width: 100%;
+    background: #fff;
+    margin: 5px;
+    border-radius: 15px;
+    float: left;
+}
+#efeito ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    float: left;
+}
+#efeito ul li {
+    float: left;
+    font-size: 1em;
+}
+
+#efeito ul li a{
+    color: #888;
+    text-decoration: none;
+    padding: 20px;
+    display: block;
+}
+#efeito ul li:hover {
+    background: #000;
+    border-radius: 5px;
+}
+#efeito ul li .home {
+    background:#3a1edb url(../img/home.png) no-repeat center;
+    float: left;
+    width: 100%;
+    padding: 30px 0;
+    margin-bottom: 15px;
+    border-top-left-radius: 5px;
+}
+#efeito ul li .serviço {
+    background:#0f9cee url(../img/servico.png) no-repeat center;
+    float: left;
+    width: 100%;
+    padding: 30px 0;
+    margin-bottom: 15px;
+    border-top-left-radius: 5px;
+}
+#efeito ul li .portifolio {
+    background:#3a1edb url(../img/portifolio.png) no-repeat center;
+    float: left;
+    width: 100%;
+    padding: 30px 0;
+    margin-bottom: 15px;
+    border-top-left-radius: 5px;
+}
+#efeito ul li .eventos {
+    background:#0f4ec5 url(../img/evento.png) no-repeat center;
+    float: left;
+    width: 100%;
+    padding: 30px 0;
+    margin-bottom: 15px;
+    border-top-left-radius: 5px;
+}
+#efeito ul li .sobre {
+    background:#0f9cee url(../img/sobre.png) no-repeat center;
+    float: left;
+    width: 100%;
+    padding: 30px 0;
+    margin-bottom: 15px;
+    border-top-left-radius: 5px;
+}
+#efeito ul li .contatos {
+    background:#3a1edb url(../img/contato.png) no-repeat center;
+    float: left;
+    width: 100%;
+    padding: 30px 0;
+    margin-bottom: 15px;
+    border-top-left-radius: 5px;
+
+}

@@ -1,0 +1,73 @@
+* {/*padding é a margem interno(borda de uma tela)*/
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #828282;
+}
+nav {/*auto replica a medida para todos os lados */
+    margin: 150px auto;
+    width: 450px;
+    height: 450px;
+}
+#check {/*id=# o CSS*/
+    display: none;
+}
+#central {/*A tag possition está sendo usada para centralizar, cursor para indicar que é um botão clicavel e o z-index para virar uma camada e esconder as outras imagens*/
+    cursor: pointer;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    margin: 150px 150px;
+    z-index: 1;
+}
+#central img {
+    width: 100%;
+    border-radius: 50%;/*border-radius está transformando a imagem em um circulo*/
+    transition: all .5s linear ;/*transition é o padrão do transform abaixo*/
+}
+/*. para classe e # para id*/
+.link {/*Aqui as imagens estão sendo padronizadas com um tamanho menor e formato arredondado e posicionados atráz do botão central*/
+    position: absolute;
+    margin: 195px 195px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    transition: all .5s linear;
+}
+#check:checked ~ a #link01{/*Ao ser clicado é posicionado na vertical superior*/
+    transform: translateY(-195px);
+    transition: all .5s linear;
+}
+#check:checked ~ a #link02{/*Ao ser clicado é posicionado na horizontal direita*/
+    transform: translateX(195px);
+    transition: all .5s linear;
+}
+#check:checked ~ a #link03{/*Ao ser clicado é posicionado na vertical infeior*/
+    transform: translateY(195px);
+    transition: all .5s linear;
+}#check:checked ~ a #link04{/*Ao ser clicado é posicionado na horizontal esquerda*/
+    transform: translateX(-195px);
+    transition: all .5s linear;
+}
+#check:checked ~ a #link05{/*Ao ser clicado é posicionado na horizontal esquerda*/
+    transform: translateX(125px) translateY(-125px);
+    transition: all .5s linear;
+}
+#check:checked ~ a #link06{/*Ao ser clicado é posicionado na horizontal esquerda*/
+    transform: translateX(125px) translateY(125px);
+    transition: all .5s linear;
+}
+#check:checked ~ a #link07{/*Ao ser clicado é posicionado na horizontal esquerda*/
+    transform: translateX(-125px) translateY(125px);
+    transition: all .5s linear;
+}
+#check:checked ~ a #link08{/*Ao ser clicado é posicionado na horizontal esquerda*/
+    transform: translateX(-125px) translateY(-125px);
+    transition: all .5s linear;
+}
+#check:checked ~ #central img {
+    transform: rotate(45deg);/*Está fazendo a animção de rotação do botão central*/
+    /*width: 100px;
+    height: 100px;*/
+}
